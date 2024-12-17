@@ -1,0 +1,49 @@
+.header-site {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0248A7;
+    height: 80px;
+    width: 100%;
+    color: white;
+    @media (max-width: 533px) {
+        justify-content: flex-end;
+    }
+}
+.header-site-logo {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 100%;
+    @media (max-width: 768px) {
+        height: 100px;
+        width: 100%;
+    }
+    @media (max-width: 533px) {
+        padding: 0 2pc 0pc 1pc;
+        justify-content: flex-start;
+    }
+}
+.header-site-menu {
+    display: flex;
+    margin-right: 20px;
+}
+.header-site-menu-item {
+    margin-left: 20px;
+}
+.logo {
+    width: 200px;
+    height: 200px;
+    @media (max-width: 768px) {
+        height: 100px;
+        width: 100px;
+    }
+}
+.name {
+    margin-left: 20px;
+    @media (max-width: 533px) {
+        display: none;
+    }
+}

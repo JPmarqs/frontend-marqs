@@ -1,0 +1,41 @@
+@use './variables.scss';
+@use './breakpoint.scss';
+@use 'primeicons/primeicons.css';
+@use './header.scss';
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+h1 {
+    font-size: var(--h1-font-size);
+    font-weight: var(--h1-font-weight);
+    line-height: var(--h1-line-height);
+}
+
+h2 {
+    font-size: var(--h2-font-size);
+    font-weight: var(--h2-font-weight);
+    line-height: var(--h2-line-height);
+}
+
+p {
+    font-size: var(--p-font-size);
+    font-weight: var(--p-font-weight);
+    line-height: var(--p-line-height);
+}
+
+.container {
+    width: 100%;
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+}   
