@@ -33,6 +33,10 @@
 }
 .header-site-menu-item {
     margin-left: 20px;
+    &:hover {
+        cursor: pointer;
+        color: #ff6600;
+    }
 }
 .logo {
     width: 200px;

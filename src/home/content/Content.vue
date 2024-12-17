@@ -11,21 +11,18 @@
     const cards = ref([
         {
             icone: 'lightbulb',
-            title: 'Planejamos seu Website',
-            content: 'Tudo começa com o desejo de alavancar suas vendas e se projetar no mercado. No processo de planejamento, Definimos o layout do seu site,'+
-                     ' desde páginas principal até páginas de produtos.'
+            title: 'Planejamos',
+            content: 'Tudo começa com o desejo de alavancar suas vendas e se projetar no mercado. No processo de planejamento, Definimos o layout do seu site.'
         },
         {
             icone: 'cubes',
-            title: 'Projetamos seu Website',
-            content: 'O projeto de um site é um processo que envolve a criação de um plano de site, a definição de suas páginas, o desenvolvimento de conteúdo e a estruturação do site.' +
-                ' Você contará com profissionais para criar o melhor layout para seu site. '
+            title: 'Projetamos',
+            content: 'O projeto de um site é um processo que envolve a criação de um plano de site, a definição de suas páginas, o desenvolvimento de conteúdo e a estruturação do site.'
         },
         {
             icone: 'laptop-code',
-            title: 'Desenvolvemos seu Website',
-            content: 'Você contará com desenvolvedores back-end e front-end para construir seu site, usando as melhores práticas do setor e documentos de especificações detalhadas. '+
-                     'Seu site será com a capacidade e escalabilidade para corresponder ao seu potencial de crescimento.'
+            title: 'Desenvolvemos',
+            content: 'Você contará com desenvolvedores back-end e front-end para construir seu site, usando as melhores práticas do setor e documentos de especificações detalhadas.'
         }
     ]);
 </script>
