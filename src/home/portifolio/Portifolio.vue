@@ -1,12 +1,23 @@
 <template>
   <div class="portifolio-content">
     <h1 class="title-portifolio">Portifólio</h1>
+    <h3 class="description-portifolio">
+      Confira alguns dos nosso projetos e sites que ja realizamos!
+    </h3>
     <v-carousel hide-delimiters>
       <template v-slot:prev="{ props }">
-        <i class="pi pi-angle-left" style="font-size: 2rem" @click="props.onClick"></i>
+        <i
+          class="pi pi-angle-left"
+          style="font-size: 2rem"
+          @click="props.onClick"
+        ></i>
       </template>
       <template v-slot:next="{ props }">
-        <i class="pi pi-angle-right" style="font-size: 2rem" @click="props.onClick"></i>
+        <i
+          class="pi pi-angle-right"
+          style="font-size: 2rem"
+          @click="props.onClick"
+        ></i>
       </template>
       <v-carousel-item
         v-for="(item, i) in items"
@@ -31,7 +42,7 @@ export default {
     const items = ref([
       {
         src: site1,
-      }
+      },
     ]);
 
     return {
@@ -52,11 +63,15 @@ export default {
   height: 100%;
   border-radius: 30px;
 }
-
 .title-portifolio {
   margin-bottom: 30px;
   text-align: center;
   font-weight: bold;
   color: #fdfdfd;
+}
+.description-portifolio {
+  color: white;
+  text-align: center;
+  padding: 0 3px;
 }
 </style>

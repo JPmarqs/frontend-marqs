@@ -45,7 +45,7 @@ defineProps({
   border: 3px solid #0248a7;
   @media (max-width: 768px) {
     padding-top: 1pc;
-    width: 100%;
+    width: 95%;
   }
 }
 .card-container:hover {

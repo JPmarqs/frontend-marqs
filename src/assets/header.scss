@@ -24,6 +24,8 @@
         width: 100%;
     }
     @media (max-width: 533px) {
+        position: fixed;
+        z-index: 4;
         padding: 0 2pc 0pc 1pc;
         justify-content: flex-start;
     }
