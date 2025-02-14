@@ -17,7 +17,7 @@
   width: 300px;
   height: 180px;
   margin: 195px 100px 100px;
-  border-radius: 30px;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,15 +33,13 @@
   height: 40px;
   border-radius: 12px;
   display: flex;
-  border: 2px solid #0248a7;
   justify-content: center;
   align-items: center;
-  color: #0248a7;
   cursor: pointer;
   background: linear-gradient(90deg, #68b800, #ff6600, #68b800);
   background-size: 200% auto;
   transition: 0.5s;
-  animation: slideBackground 10s linear infinite;
+  animation: slideBackground 3s linear infinite;
   @media (max-width: 768px) {
     text-align: -webkit-center;
     font-size: small;
@@ -57,4 +55,9 @@
       background-position: 100% center;
     }
   }
+}
+.banner-site-button-content:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  color: #0248a7;
 }

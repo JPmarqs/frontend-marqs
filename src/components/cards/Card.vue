@@ -1,8 +1,6 @@
 <template>
   <div class="card-container">
-    <div v-if="icone.length > 0">
-      <img :src="icone.toString()" alt="Ícone" class="icon-image" />
-    </div>
+      <img :src="icone" alt="Ícone" class="icon-image" />
     <div class="card-title">
       <h2>{{ title }}</h2>
     </div>
@@ -60,7 +58,7 @@ defineProps({
   }
 }
 .icon-image {
-  width: 30%;
+  width: 20%;
 }
 .card-content {
   font-size: 19px;
