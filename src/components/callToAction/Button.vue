@@ -1,6 +1,6 @@
 <template>
     <div class="call-to-action" @click="openWhatsapp">
-        <p>Traga seu projeto para a MARQS Solutions </p>
+        <p>Desenvolva seu projeto com a Marqs Solutions</p>
         <i class="pi pi-arrow-right" style="font-size: 1.5rem"></i>
     </div>
 </template>
@@ -22,7 +22,7 @@
         color: white;
         &:hover {
             cursor: pointer;
-            background-color: #ff6600;
+            background: linear-gradient(90deg, #2575fc, #ff6600);
         }
         > p {
             &:hover {

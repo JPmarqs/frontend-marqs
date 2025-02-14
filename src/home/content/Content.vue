@@ -2,27 +2,38 @@
     <div class="content-container">
         <Card v-for="card in cards" :key="card.title" :icone="card.icone" :title="card.title" :content="card.content" />
     </div>
+    
 </template>
 
 
 <script setup>
     import Card from '../../components/cards/Card.vue';
+    import img1 from '../../assets/icones/browser_find_search.png';
+    import img2 from '../../assets/icones/card_credit.png';
+    import img3 from '../../assets/icones/start.png';
+    import img4 from '../../assets/icones/content_page_website.png';
+
     import { ref } from 'vue';
     const cards = ref([
         {
-            icone: 'lightbulb',
-            title: 'Planejamos',
-            content: 'Tudo começa com o desejo de alavancar suas vendas e se projetar no mercado. No processo de planejamento, Definimos o layout do seu site.'
+            icone: img1,
+            title: 'Landing page',
+            content: 'Transforme visitantes em clientes com uma landing page otimizada e aumente sua conversão!'
         },
         {
-            icone: 'cubes',
-            title: 'Projetamos',
-            content: 'O projeto de um site é um processo que envolve a criação de um plano de site, a definição de suas páginas, o desenvolvimento de conteúdo e a estruturação do site.'
+            icone: img2,
+            title: 'E-commerce',
+            content: 'Uma loja virtual bem estruturada aumenta suas vendas e oferece uma experiência incrível aos clientes.'
         },
         {
-            icone: 'laptop-code',
-            title: 'Desenvolvemos',
-            content: 'Você contará com desenvolvedores back-end e front-end para construir seu site, usando as melhores práticas do setor e documentos de especificações detalhadas.'
+            icone: img3,
+            title: 'Pagina Start',
+            content: 'Ideal para quem precisa de um primeiro contato digital com clientes. Tenha seu site no ar sem complicação!'
+        },
+        {
+            icone: img4,
+            title: 'Site Institutional',
+            content: 'A vitrine digital do seu negócio! Um site institucional transmite credibilidade e fortalece sua marca.'
         }
     ]);
 </script>

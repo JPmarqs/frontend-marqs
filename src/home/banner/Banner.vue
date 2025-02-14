@@ -2,9 +2,9 @@
     <div class="banner-site-content" >
         <div class="banner-site-card">
             <h2>DESENVOLVIMENTO DE WEBSITES</h2>
-            <div class="banner-site-divider"></div>
+            <h3>Soluções feitas sob medida para o seu negócio</h3>
             <div class="banner-site-button-content" @click="openWhatsapp">
-                Entre em contato
+                Entre em contato via WhatsApp
             </div>
         </div>
     </div>
