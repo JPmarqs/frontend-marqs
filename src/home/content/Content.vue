@@ -13,9 +13,9 @@
 <script setup>
 import Card from "../../components/cards/Card.vue";
 import img1 from "../../assets/carousel/browser.png";
-import img2 from "../../assets/icones/card_credit.png";
-import img3 from "../../assets/icones/start.png";
-import img4 from "../../assets/icones/content.png";
+import img2 from "../../assets/carousel/card_credit.png";
+import img3 from "../../assets/carousel/start.png";
+import img4 from "../../assets/carousel/content.png";
 
 import { ref } from "vue";
 const cards = ref([
