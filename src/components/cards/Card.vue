@@ -1,6 +1,8 @@
 <template>
   <div class="card-container">
-    <img :src="icone.toString()" alt="Ícone" class="icon-image" />
+    <div v-if="icone.length > 0">
+      <img :src="icone.toString()" alt="Ícone" class="icon-image" />
+    </div>
     <div class="card-title">
       <h2>{{ title }}</h2>
     </div>
