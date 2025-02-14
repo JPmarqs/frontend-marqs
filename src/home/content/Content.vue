@@ -7,7 +7,6 @@
 
 
 <script setup>
-    import Card from '../../components/cards/Card.vue';
     import img1 from '../../assets/icones/browser_find_search.png';
     import img2 from '../../assets/icones/card_credit.png';
     import img3 from '../../assets/icones/start.png';
