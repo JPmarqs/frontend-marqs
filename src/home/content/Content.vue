@@ -7,10 +7,10 @@
 
 
 <script setup>
-    import img1 from '../../assets/icones/browser_find_search.png';
+    import img1 from '../../assets/icones/browser.png';
     import img2 from '../../assets/icones/card_credit.png';
     import img3 from '../../assets/icones/start.png';
-    import img4 from '../../assets/icones/content_page_website.png';
+    import img4 from '../../assets/icones/content.png';
 
     import { ref } from 'vue';
     const cards = ref([
