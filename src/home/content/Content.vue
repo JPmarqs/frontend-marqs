@@ -7,30 +7,34 @@
 
 
 <script setup>
-    import img1 from '../../assets/icones/browser.png';
-    import img2 from '../../assets/icones/card_credit.png';
-    import img3 from '../../assets/icones/start.png';
-    import img4 from '../../assets/icones/content.png';
+    import img3 from '@/assets/icones/start.png';
+    import img1 from '@/assets/icones/browser.png';
+    import img4 from '@/assets/icones/content.png';
+    import img2 from '@/assets/icones/card_credit.png';
 
     import { ref } from 'vue';
+    const browserIconRef = ref(img1);
+    const contentIconRef = ref(img4);
+    const startIconRef = ref(img3);
+    const cardIconRef = ref(img2);
     const cards = ref([
         {
-            icone: img1,
+            icone: browserIconRef,
             title: 'Landing page',
             content: 'Transforme visitantes em clientes com uma landing page otimizada e aumente sua conversão!'
         },
         {
-            icone: img2,
+            icone: cardIconRef,
             title: 'E-commerce',
             content: 'Uma loja virtual bem estruturada aumenta suas vendas e oferece uma experiência incrível aos clientes.'
         },
         {
-            icone: img3,
+            icone: startIconRef,
             title: 'Pagina Start',
             content: 'Ideal para quem precisa de um primeiro contato digital com clientes. Tenha seu site no ar sem complicação!'
         },
         {
-            icone: img4,
+            icone: contentIconRef,
             title: 'Site Institutional',
             content: 'A vitrine digital do seu negócio! Um site institucional transmite credibilidade e fortalece sua marca.'
         }
