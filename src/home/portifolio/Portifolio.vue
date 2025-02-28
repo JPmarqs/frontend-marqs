@@ -1,8 +1,8 @@
 <template>
   <div class="portifolio-content">
-    <h1 class="title-portifolio">Portifólio</h1>
+    <h1 class="title-portifolio">Nosso portifólio</h1>
     <h3 class="description-portifolio">
-      Confira alguns dos nosso projetos e sites que ja realizamos!
+      Confira alguns dos nossos projetos e sites!
     </h3>
     <v-carousel hide-delimiters>
       <template v-slot:prev="{ props }">
@@ -33,6 +33,7 @@
 import { ref } from "vue";
 import { VCarousel, VCarouselItem } from "vuetify/components";
 import site1 from "../../assets/carousel/adv-ex.png";
+import site2 from "../../assets/carousel/seu-prox.png";
 export default {
   components: {
     VCarousel,
@@ -42,6 +43,9 @@ export default {
     const items = ref([
       {
         src: site1,
+      },
+      {
+        src: site2,
       },
     ]);
 
