@@ -33,7 +33,7 @@
 import { ref } from "vue";
 import { VCarousel, VCarouselItem } from "vuetify/components";
 import site1 from "../../assets/carousel/adv-ex.png";
-import site2 from "../../assets/carousel/seu-prox.png";
+import site2 from "../../assets/carousel/Seu-prox.png";
 export default {
   components: {
     VCarousel,
