@@ -1,27 +1,39 @@
 <template>
-  <v-app>
-    <v-container>
-      <Header />
-      <Banner />
-      <Content />
-      <CallToAction />
-      <Form />
-      <Portifolio />
-      <Footer />
-    </v-container>
-  </v-app>
+  <div id="app">
+    <HeaderComponent />
+    <HeroSection />
+    <ServicesSection />
+    <AboutSection />
+    <ContactSection />
+    <Portifolio /> 
+    <FooterComponent />
+  </div>
 </template>
 
-<script setup>
-import Header from "./home/header/Header.vue";
-import Banner from "./home/banner/Banner.vue";
-import Content from "./home/content/Content.vue";
-import Form from "./home/form/Form.vue";
-import Portifolio from "./home/portifolio/Portifolio.vue";
-import Footer from "./home/footer/Footer.vue";
-import CallToAction from "./components/callToAction/Button.vue";
+<script>
+import HeaderComponent from '@/home/HeaderComponent.vue'
+import HeroSection from '@/home/HeroSection.vue'
+import ServicesSection from '@/home/ServicesSection.vue'
+import ContactSection from '@/home/ContactSection.vue'
+import FooterComponent from '@/home/Footer.vue'
+import AboutSection from '@/home/AboutSection.vue'
+import Portifolio from '@/home/portifolio/Portifolio.vue'
+
+export default {
+  name: 'App',
+  components: {
+    HeaderComponent,
+    HeroSection,
+    ServicesSection,
+    AboutSection,
+    ContactSection,
+    FooterComponent,
+    Portifolio
+  }
+}
 </script>
 
 <style>
-@import "./assets/main.scss";
+/* Importar o CSS original aqui ou usar CSS modules */
+@import './assets/main.scss';
 </style>

@@ -1,39 +1,38 @@
 <template>
-    <div class="call-to-action" @click="openWhatsapp">
-        <p>Desenvolva seu projeto com a Marqs Solutions</p>
-        <i class="pi pi-arrow-right" style="font-size: 1.5rem"></i>
-    </div>
+  <div class="bnt-whatsapp">
+    <a :href="whatsappLink" target="_blank"> 
+      <button class="btn-whatsapp"> {{ buttonText }} <i :class="icone"></i></button>
+    </a>
+  </div>
 </template>
 
-<script setup>
-    const openWhatsapp = () => {
-        window.open('https://api.whatsapp.com/send?phone=5562998626461&text=Olá%20Marqs%20est%C3%A1%20bem%3F', '_blank');
-    }
-</script>
+<script>
+import { icon } from '@fortawesome/fontawesome-svg-core';
 
-<style scoped lang="scss">
-    .call-to-action {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 3pc;
-        width: 100%;
-        background-color: #19065c;
-        color: white;
-        &:hover {
-            cursor: pointer;
-            background: linear-gradient(90deg, #2575fc, #ff6600);
-        }
-        > p {
-            &:hover {
-                cursor: pointer;
-                color: #19065c;
-            }
-            margin-right: 10px;
-            font-size: 1.25rem;
-            @media (max-width: 768px) {
-                font-size: 1rem;
-            }
-        }
+export default {
+  name: 'WhatsAppButton',
+  props: {
+    phone: {
+      type: String,
+      default: '5562998626461'
+    },
+    message: {
+      type: String,
+      default: 'Olá, minha mensagem de teste do whatsapp'
+    },
+    buttonText: {
+      type: String,
+      default: 'Entre em contato via WhatsApp'
+    },
+    icone: {
+      type: String,
+      default: ''
     }
-</style>    
+  },
+  computed: {
+    whatsappLink() {
+      return `https://api.whatsapp.com/send?phone=${this.phone}&text=${encodeURIComponent(this.message)}`
+    }
+  }
+}
+</script>

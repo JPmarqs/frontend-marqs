@@ -42,15 +42,7 @@
         color: #ff6600;
     }
 }
-.logo {
-    width: 200px;
-    height: 200px;
-    z-index: 4;
-    @media (max-width: 768px) {
-        height: 100px;
-        width: 100px;
-    }
-}
+
 .name {
     margin-left: 20px;
     @media (max-width: 533px) {
