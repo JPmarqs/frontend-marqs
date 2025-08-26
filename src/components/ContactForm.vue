@@ -10,16 +10,7 @@
         required
       />
     </div>
-    <div class="form-group">
-      <label for="email">E-mail</label>
-      <input
-        type="email"
-        id="email"
-        v-model="form.email"
-        placeholder="seu@email.com"
-        required
-      />
-    </div>
+    
     <div class="form-group">
       <label for="message">Mensagem</label>
       <textarea
@@ -41,18 +32,19 @@ export default {
   data() {
     return {
       form: {
-        name: '',
-        email: '',
+        name: '', 
         message: ''
-      }
+      },
+      whatsappLink: 'https://api.whatsapp.com/send?phone=5562998626461&text='
     }
   },
   methods: {
     submitForm() {
       // Validação básica
-      if (this.form.name && this.form.email && this.form.message) {
-        this.$emit('form-submit', { ...this.form })
-        this.resetForm()
+      if (this.form.name &&  this.form.message) { 
+        this.whatsappLink += encodeURIComponent(this.form.message);
+        window.open(this.whatsappLink, '_blank');
+        this.resetForm();
       }
     },
     resetForm() {

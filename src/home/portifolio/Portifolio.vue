@@ -32,8 +32,9 @@
 <script>
 import { ref } from "vue";
 import { VCarousel, VCarouselItem } from "vuetify/components";
-import site1 from "../../assets/carousel/adv-ex.png";
-import site2 from "../../assets/carousel/Seu-prox.png";
+import site1 from "../../assets/carousel/1.png";
+import site2 from "../../assets/carousel/2.png";
+import site3 from "../../assets/carousel/3.png";
 export default {
   components: {
     VCarousel,
@@ -47,6 +48,9 @@ export default {
       {
         src: site2,
       },
+      {
+        src: site3,
+      }
     ]);
 
     return {

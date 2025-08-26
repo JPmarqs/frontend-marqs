@@ -1,6 +1,6 @@
 <template>
   <div class="floating-card">
-    <i :class="icon" style="font-size: 2.5rem; color: #ff8c00; margin-bottom: 1rem;"></i>
+    <i :class="icon" style="font-size: 2.5rem; color: #ff8c00;"></i>
     <h3>{{ title }}</h3>
     <p style="padding-bottom: 10px;">{{ description }}</p>
     <div v-if="WhatsAppBtn" >

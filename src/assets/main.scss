@@ -246,6 +246,9 @@ nav {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  @media (max-width: 1180px) { 
+    padding-top: 4pc;
+  } 
 }
 
 @media (max-width: 768px) {
@@ -261,6 +264,7 @@ nav {
   border-radius: 20px;
   padding: 2rem;
   width: 24pc;
+  
   height: 14pc;
   display: flex;
   flex-direction: column;
@@ -270,7 +274,11 @@ nav {
   position: relative;
   margin-top: 5px;
 }
-
+@media (max-width: 1180px) {
+  .floating-card { 
+    height: 9pc;
+  }
+}
 .floating-card::before {
   font-size: 3rem;
   margin-bottom: 1rem;

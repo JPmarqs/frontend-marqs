@@ -13,7 +13,7 @@
             solução perfeita para sua empresa.
           </p>
         </div>
-        <ContactForm @form-submit="handleFormSubmit" />
+        <ContactForm/>
       </div>
     </div>
   </section>
@@ -26,13 +26,6 @@ export default {
   name: 'ContactSection',
   components: {
     ContactForm
-  },
-  methods: {
-    handleFormSubmit(formData) {
-      // Aqui você pode processar os dados do formulário
-      console.log('Dados do formulário:', formData)
-      // Implementar lógica de envio de email ou integração com API
-    }
   }
 }
 </script>

@@ -6,9 +6,7 @@
   </div>
 </template>
 
-<script>
-import { icon } from '@fortawesome/fontawesome-svg-core';
-
+<script> 
 export default {
   name: 'WhatsAppButton',
   props: {
@@ -18,7 +16,7 @@ export default {
     },
     message: {
       type: String,
-      default: 'Olá, minha mensagem de teste do whatsapp'
+      default: 'Olá, Gostaria de mais informações sobre a criação de sites.'
     },
     buttonText: {
       type: String,
