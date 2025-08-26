@@ -8,7 +8,7 @@
           negócio para o próximo nível.
         </p>
         <div class="cta-buttons">
-          <a href="#contact" class="btn-primary">Iniciar Projeto</a>
+          <a :href="whatsappLink" target="_blank" class="btn-primary">Iniciar Projeto</a>
           <a href="#services" class="btn-secondary">Nossos Serviços</a>
         </div>
       </div>
@@ -44,5 +44,16 @@ export default {
   components: {
     FloatingCard,
   },
+  data() {
+    return {
+      whatsappLink: '',
+      message: 'Olá, Gostaria de mais informações sobre a criação de sites.'
+    }
+  },
+  computed: {
+    whatsappLink() {
+      return `https://api.whatsapp.com/send?phone=5562998626461&text=${encodeURIComponent(this.message)}`
+    }
+  }
 };
 </script>
